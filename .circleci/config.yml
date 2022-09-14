@@ -42,6 +42,7 @@ workflows:
     jobs:
       - "Checkout"
       - newman/hello:
+          dir: /root/project/collections
           requires: 
             - "Checkout"
 
